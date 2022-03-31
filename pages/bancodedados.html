@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>html projeto integrador</title>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" href="../css/index.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap" rel="stylesheet" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Barlow:wght@300&family=Open+Sans:wght@300&display=swap"
+      rel="stylesheet" />
+  </head>
+
+  <body>
+    <header>
+      <div>
+        <nav>
+          <ul>
+            <li id="homebtn">
+              <a href="index.html">Home</a>
+            </li>
+            <li><a href="introducao.html">Introdução</a></li>
+            <li><a href="redes.html">Redes</a></li>
+            <li>
+              <a href="bancodedados.html">Banco de dados</a>
+            </li>
+            <li><a href="autoria.html">Autoria Web</a></li>
+            <li>
+              <a href="organizacao.html">Manutenção de computadores</a>
+            </li>
+            <li>
+              <a href="eletronica.html">Eletroeletrônica</a>
+            </li>
+            <li><a href="finalizacao.html">Considerações finais</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <section>
+
+      <h1>3 PROGRAMAÇÃO COM ACESSO A BANCO DE DADOS</h1>
+
+
+      <div class="form">
+        <p>
+          Equipe responsável:
+        </p>
+      </div>
+      <ul>
+        <li>Aldo Matheus Aquino de França
+        <li>Lara Wendy Costa Fernandes
+        <li>Matheus de Amorim Santana
+        <li>Nathan Cavalcante de Lima
+        <li>Felipe Alves Pereira Pinto (prof orientador)
+      </ul>
+      <p>
+        Esta seção apresenta a camada de persistência modelada para o sistema de controle e monitoramento proposto.
+        O modelo pensado visa manter um registro das entidades físicas envolvidas no sistema e possibilitar recuperações
+        de históricos de eventos e medições,
+        além de também ser capaz de armazenar os usuários permitidos a acessar esses dados via algum tipo de interface que
+        venha a ser proposto.
+      </p>
+      <div class="form">
+
+        <p>O diagrama entidade-relacionamento do banco de dados proposto é apresentado a seguir.</p>
+      </div>
+
+      <div class="imgs">
+        <div class="imgDafault">
+          <img src="./images/bancodiagrama.png" alt="" srcset="">
+        </div>
+      </div>
+      <p>A seguir, é detalhada a implementação desse diagrama no SGBD MySQL.
+        Nas tabelas usuário e acesso teremos as informações de login e cadastro
+        e quais ambientes o usuário poderia ter acesso para visualizar os dados referentes aos ambientes.
+      </p>
+      <div class="imgs">
+        <img src="./images/banco1.png" alt="" srcset="">
+      </div>
+      <div class="imgs">
+        <img src="./images/banco2.png" alt="" srcset="">
+      </div>
+      <div class="imgs">
+        <img src="./images/banco3.png" alt="" srcset="">
+      </div>
+      <p>
+        Nas tabelas medição, atuação, ar condicionado e sensor,
+        teremos as informações dos ares condicionados,
+        dos sensores e as medições que serão feitas.
+      </p>
+      <div class="imgs">
+        <img src="./images/banco4.png" alt="" srcset="">
+      </div>
+
+      <div class="imgs">
+        <img src="./images/banco5.png" alt="" srcset="">
+      </div>
+      <p>
+        A tabela medição irá manter o registro histórico das medições realizadas pelos sensores cadastrados.
+        Essa tabela está diretamente relacionada com a tabela ambiente, sendo o relacionamento feito pela tabela atuação.
+        Esta indica que o ambiente poderá ter várias medições relacionadas que geraram algum tipo de atuação e que uma
+        medição sempre é
+        originada de um ambiente que pode estar ligado a várias delas.
+      </p>
+      <div>
+        <div class="imgs">
+          <img src="./images/banco6.png" alt="" srcset="">
+        </div>
+      </div>
+      <div class="imgs">
+        <img src="./images/banco7.png" alt="" srcset="">
+      </div>
+    </section>
+  </body>
+</html>

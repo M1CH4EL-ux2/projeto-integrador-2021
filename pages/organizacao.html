@@ -1,0 +1,1309 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>html projeto integrador</title>
+  <meta charset="UTF-8" />
+  <link rel="stylesheet" href="../css/index.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap" rel="stylesheet" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Barlow:wght@300&family=Open+Sans:wght@300&display=swap"
+    rel="stylesheet" />
+</head>
+
+<body>
+  <header>
+    <div>
+      <nav>
+        <ul>
+          <li id="homebtn">
+            <a href="index.html">Home</a>
+          </li>
+          <li><a href="introducao.html">Introdução</a></li>
+          <li><a href="redes.html">Redes</a></li>
+          <li>
+            <a href="bancodedados.html">Banco de dados</a>
+          </li>
+          <li><a href="autoria.html">Autoria Web</a></li>
+          <li>
+            <a href="organizacao.html">Manutenção de computadores</a>
+          </li>
+          <li>
+            <a href="eletronica.html">Eletroeletrônica</a>
+          </li>
+          <li><a href="finalizacao.html">Considerações finais</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <section>
+    <h1>5 ORGANIZAÇÃO E MANUTENÇÃO DE COMPUTADORES</h1>
+    <h2>5.1 INTRODUÇÃO AO CAPÍTULO 3</h2>
+    <p>
+      Neste capítulo trabalhamos a especificação dos microcontroladores,
+      sensores e atuadores, detalhando sua funcionalidade, características,
+      especificações elétricas e aplicações dos modelos que podem ser
+      utilizados no projeto.
+    </p>
+    <div class="form">
+      <p>
+        Equipe responsável:
+      </p>
+    </div>
+    <ul>
+      <li>Allana Hillary Vieira De Menezes</li>
+      <li>Ian Gabriel da Cunha Fonseca</li>
+      <li>Luiz Gustavo Souza Medeiros De Lima</li>
+      <li>Sabrina Riany Freitas de Moura</li>
+      <li>Vinicius Alexandre Melo</li>
+      <li>Leonardo Gomes de Paiva Amorim (prof orientador)</li>
+    </ul>
+    <h2>5.2 MICROCONTROLADORES: ESP32</h2>
+    <div class="form">
+      <p>Visão Geral:</p>
+    </div>
+    <p>
+      O módulo ESP32 é um módulo de alta performance para aplicações
+      envolvendo wifi, contando com um baixíssimo custo e consumo de energia.
+      É uma evolução do já conhecido ESP8266, com maior poder de processamento
+      e bluetooth BLE 4.2 embutido.Também é um sistema em um chip com
+      microcontrolador integrado. A série ESP32 emprega um microprocessador
+      Tensilica Xtensa LX6 com duas variações dual-core e single-core e inclui
+      uma antena integrada RF tipo balun, amplificador de potência, receptor
+      de baixo ruído amplificado, filtros, gerenciamento de energia dos
+      módulos
+    </p>
+    <div class="imgs">
+      <p>Figura ** - Esp32</p>
+    </div>
+    <div class="imgs">
+      <div class="imgDafault">
+        <img src="./images/manu2.png" alt="" srcset="" />
+      </div>
+    </div>
+    <div class="form">
+      <p>Especificações técnicas do módulo ESP32:</p>
+    </div>
+    <div class="imgs">
+      <table>
+
+
+        <tr>
+          <td>Especificações</td>
+          <td>Esp32</td>
+        </tr>
+        <tr>
+          <td>Data do anúncio</td>
+          <td>Setembro de 2016</td>
+        </tr>
+        <tr>
+          <td>Processador principal</td>
+          <td>
+            Tensilica Xtensa 32-bit LX6 (up to 240MHz) (optionally dual core)
+          </td>
+        </tr>
+        <tr>
+          <td>SRAM</td>
+          <td>520KB</td>
+        </tr>
+        <tr>
+          <td>ROM</td>
+          <td>448KB</td>
+        </tr>
+        <tr>
+          <td>JTAG</td>
+          <td>SIM</td>
+        </tr>
+        <tr>
+          <td>Cache</td>
+          <td>64KB</td>
+        </tr>
+        <tr>
+          <td>Wifi</td>
+          <td>Wi-FI 4</td>
+        </tr>
+        <tr>
+          <td>Bluetooth</td>
+          <td>BLE 4.2 (upgrade to 5.0, with limitations)</td>
+        </tr>
+        <tr>
+          <td>Ethernet</td>
+          <td>SIM</td>
+        </tr>
+        <tr>
+          <td>Memória RTC</td>
+          <td>16KB</td>
+        </tr>
+        <tr>
+          <td>PMU</td>
+          <td>SIM</td>
+        </tr>
+        <tr>
+          <td>Coprovessador ULP</td>
+          <td>SIM</td>
+        </tr>
+      </table>
+    </div>
+
+    <div class="imgs">
+      <table>
+        <tr>
+          <td>Acelerador criptográfico</td>
+          <td>SHA, RSA, AES, RNG</td>
+        </tr>
+        <tr>
+          <td>Secure boot</td>
+          <td>SIM</td>
+        </tr>
+        <tr>
+          <td>Criptografia Flash</td>
+          <td>SIM</td>
+        </tr>
+        <tr>
+          <td>SPI</td>
+          <td>4</td>
+        </tr>
+        <tr>
+          <td>12C</td>
+          <td>2</td>
+        </tr>
+        <tr>
+          <td>UART</td>
+          <td>3</td>
+        </tr>
+      </table>
+    </div>
+
+    <div class="imgs">
+      <table>
+        <tr>
+          <td>SDIO Host</td>
+          <td>1</td>
+        </tr>
+        <tr>
+          <td>SDIO Slave</td>
+          <td>1</td>
+        </tr>
+        <tr>
+          <td>GPIO</td>
+          <td>34</td>
+        </tr>
+        <tr>
+          <td>LED PWM</td>
+          <td>16</td>
+        </tr>
+        <tr>
+          <td>MCPWM</td>
+          <td>6</td>
+        </tr>
+        <tr>
+          <td>Pulse counter</td>
+          <td>8</td>
+        </tr>
+        <tr>
+          <td>GDMA*</td>
+          <td>0</td>
+        </tr>
+        <tr>
+          <td>USB</td>
+          <td>NÃO</td>
+        </tr>
+        <tr>
+          <td>TWAI**</td>
+          <td>1</td>
+        </tr>
+        <tr>
+          <td>DAC</td>
+          <td>2x 8-bit</td>
+        </tr>
+        <tr>
+          <td>RMT</td>
+          <td>8x transmission/reception</td>
+        </tr>
+        <tr>
+          <td>Timer</td>
+          <td>4x 64-bit</td>
+        </tr>
+        <tr>
+          <td>Sensor de temperatura</td>
+          <td>SIM</td>
+        </tr>
+        <tr>
+          <td>Sensor Hall</td>
+          <td>SIM</td>
+        </tr>
+        <tr>
+          <td>Touch Sensor</td>
+          <td>10</td>
+        </tr>
+        <tr>
+          <td>ADC</td>
+          <td>2x 12-bit SAR, up o 18 channels</td>
+        </tr>
+
+      </table>
+    </div>
+    <div class="form">
+      <p>Especificações técnicas do módulo ESP32 DEVKit V1.0:</p>
+    </div>
+    <div class="imgs">
+      <table>
+        <tr>
+          <td>CPU: Xtensa® Dual-Core 32-bit LX6</td>
+        </tr>
+        <tr>
+          <td>ROM: 448 KBytes</td>
+        </tr>
+        <tr>
+          <td>RAM: 520 Kbytes</td>
+        </tr>
+        <tr>
+          <td>Flash: 4 MB</td>
+        </tr>
+        <tr>
+          <td>Clock máximo: 240MHz</td>
+        </tr>
+        <tr>
+          <td>Wireless padrão 802.11 b/g/n</td>
+        </tr>
+        <tr>
+          <td>Conexão Wifi 2.4Ghz (máximo de 150 Mbps)</td>
+        </tr>
+        <tr>
+          <td>Antena embutida</td>
+        </tr>
+        <tr>
+          <td>Conector micro-usb</td>
+        </tr>
+        <tr>
+          <td>
+            Wi-Fi Direct (P2P), P2P Discovery, P2P Group Owner mode e P2P
+            Power Management
+          </td>
+        </tr>
+        <tr>
+          <td>Modos de operação: STA/AP/STA+AP</td>
+        </tr>
+        <tr>
+          <td>Bluetooth BLE 4.2</td>
+        </tr>
+        <tr>
+          <td>Portas GPIO: 11</td>
+        </tr>
+        <tr>
+          <td>GPIO com funções de PWM, I2C, SPI, etc</td>
+        </tr>
+        <tr>
+          <td>Tensão de operação: 4,5 ~ 9V</td>
+        </tr>
+        <tr>
+          <td>Taxa de transferência: 110-460800bps</td>
+        </tr>
+        <tr>
+          <td>Distância entre pinos: 2,54 mm (0,00254 polegadas)</td>
+        </tr>
+        <tr>
+          <td>Dimensões: 52 mm x 28 mm x 5 mm (desconsiderando os pinos)</td>
+        </tr>
+      </table>
+
+      <div class="imgs">
+        <table>
+          <tr>
+            <td>Especificações</td>
+            <td>Esp8266</td>
+            <td>Esp32</td>
+            <td>Esp32-C6</td>
+          </tr>
+          <tr>
+            <td>Data do anúncio</td>
+            <td>Agosto de 2014</td>
+            <td>Setembro de 2016</td>
+            <td>Novembro de 2020</td>
+            <td>Abril de 2021</td>
+          </tr>
+          <tr>
+            <td>Processador principal</td>
+            <td>Tensilica L106 32-bit (up to 160MHz)</td>
+            <td>
+              Tensilica Xtensa 32-bit LX6 (up to 240MHz) (optionally dual core)
+            </td>
+            <td>RISC-V 32-bit (up to 160MHz)</td>
+            <td>RISC-V 32-bit (up to 160MHz)</td>
+          </tr>
+        </table>
+      </div>
+      <div class="imgs">
+        <table>
+          <tr>
+            <td>SRAM</td>
+            <td>160KB</td>
+            <td>520KB</td>
+            <td>400KB</td>
+            <td>400KB</td>
+          </tr>
+          <tr>
+            <td>ROM</td>
+            <td>0</td>
+            <td>448KB</td>
+            <td>384KB</td>
+            <td>384KB</td>
+          </tr>
+          <tr>
+            <td>JTAG</td>
+            <td>NÃO</td>
+            <td>SIM</td>
+            <td>SIM</td>
+            <td>SIM</td>
+          </tr>
+          <tr>
+            <td>Wi-Fi</td>
+            <td>Wi-Fi 4 (only up to 72.2Mbps)</td>
+            <td>Wi-Fi 4</td>
+            <td>Wi-Fi 4</td>
+            <td>Wi-Fi 6</td>
+          </tr>
+          <tr>
+            <td>Bluetooth</td>
+            <td>Não</td>
+            <td>BLE 4.2 (upgrade to 5.0, with limitations)</td>
+            <td>BLE 5.0</td>
+            <td>BLE 5.0</td>
+          </tr>
+          <tr>
+            <td>Ethernet</td>
+            <td>NÃO</td>
+            <td>SIM</td>
+            <td>NÃO</td>
+            <td>NÃO COnFIRMADO</td>
+          </tr>
+          <tr>
+            <td>Memória RTC</td>
+            <td>778B</td>
+            <td>16KB</td>
+            <td>8Kb</td>
+            <td>NÂO</td>
+          </tr>
+          <tr>
+            <td>PMU</td>
+            <td>SIM</td>
+            <td>SIM</td>
+            <td>SIM</td>
+            <td>NÃO INFORMADO</td>
+          </tr>
+          <tr>
+            <td>Coprocessador ULP</td>
+            <td>NÂO</td>
+            <td>SIM</td>
+            <td>NÂO</td>
+            <td>NÂO COMFIRMADO</td>
+          </tr>
+          <tr>
+            <td>Acelerador criptográfico</td>
+            <td>NÃO</td>
+            <td>SHA, RSA, AES, RNG</td>
+            <td>SHA, RSA, AES, RNG, HMAC, Digital Signature</td>
+            <td>SHA, RSA, AES, RNG, HMAC, Digital Signature</td>
+          </tr>
+          <tr>
+            <td>Secure boot</td>
+            <td>NÂO</td>
+            <td>SIM</td>
+            <td>SIM</td>
+            <td>SIM</td>
+          </tr>
+          <tr>
+            <td>Criptografia Flash</td>
+            <td>NÂO</td>
+            <td>SIM</td>
+            <td>XTS-AES-128</td>
+            <td>XTS-AES-128</td>
+          </tr>
+          <tr>
+            <td>SPI</td>
+            <td>2</td>
+            <td>4</td>
+            <td>3</td>
+            <td>NÃO INFORMADO</td>
+          </tr>
+          <tr>
+            <td>I2C</td>
+            <td>1</td>
+            <td>2</td>
+            <td>1</td>
+            <td>NÃO INFORMADO</td>
+          </tr>
+          <tr>
+            <td>I2C</td>
+            <td>1</td>
+            <td>2</td>
+            <td>1</td>
+            <td>NÃO INFORMADO</td>
+          </tr>
+          <tr>
+            <td>UART</td>
+            <td>2 (One TX</td>
+            <td>3</td>
+            <td>2</td>
+            <td>NÂO</td>
+          </tr>
+          <tr>
+            <td></td>
+            <td>only</td>
+            <td></td>
+            <td></td>
+            <td>INFORMADO</td>
+          </tr>
+        </table>
+      </div>
+  </section>
+
+  <section>
+    <h2>5.3 SENSORES</h2>
+    <h2 style="font-size: 22px;">3.3.1 SENSOR DE PRESENÇA</h2>
+    <h2 style="font-size: 22px;">3.3.1.1 IVP 5001 PET SHIELD</h2>
+    <div class="form">
+      <p>Visão Geral:</p>
+    </div>
+    <p>
+      IVP 5001 PET SHIELD é um sensor de infravermelho passivo, que possui
+      tecnologia de detecção por raios infravermelhos com inteligência,
+      adotando uma tecnologia avançada de análise do sinal, seu algoritmo leva
+      em consideração a análise de parâmetros importantes como frequência,
+      amplitude, simetria de pulso por meio de cálculo de energia, contagem de
+      pulso e nível de coincidência de pulso. Podendo assim evitar falsos
+      disparos em ambientes perigosos. O SHIELD é composto de um material
+      ferromagnético, que tem como princípio de funcionamento a indução
+      diretamente do campo magnético para ela, resultando em um campo
+      magnético quase nulo no interior da blindagem, oferecendo maior
+      segurança em ambientes ruidosos e com alto índices RFI/EMI.
+    </p>
+    <div class="imgs">
+      <p>Figura ** - Sensor IVP 5001 PET SHIELD</p>
+    </div>
+    <div class="imgs">
+      <div class="imgDafault">
+        <img src="./images/manu1.png" alt="" srcset="" />
+      </div>
+    </div>
+    <div class="form">
+      <p>Caracteristicas:</p>
+    </div>
+    <p>
+      O IVP 5001 PET SHIELD possui sensor micro controlado, software de
+      análise de simetria de pulso, ajuste de sensibilidade, compensação
+      automática de temperatura em tempo real, imunidade à luz branca de até
+      20.000 lux, alta imunidade a RFI/EMI, algoritmo altamente eficaz contra
+      disparo falso, imunidade a animais domésticos até 20 kg, chave
+      antiviolação para tampa frontal inferior (chave tamper) e facilidade de
+      instalação.
+    </p>
+    <div class="imgs">
+      <table>
+        <tbody>
+          <tr>
+            <td>Ambiente de aplicação</td>
+            <td>Interno</td>
+          </tr>
+          <tr>
+            <td>Comunicação com central de alarme</td>
+            <td>Com fio</td>
+          </tr>
+          <tr>
+            <td>Alcance de detecção do PIR<br /></td>
+            <td>12 m</td>
+          </tr>
+          <tr>
+            <td>Ângulo de detecção</td>
+            <td>90°</td>
+          </tr>
+          <tr>
+            <td>Método de detecção</td>
+            <td>PIR</td>
+          </tr>
+          <tr>
+            <td>Indicação de disparo</td>
+            <td>LED</td>
+          </tr>
+          <tr>
+            <td>Níveis de sensibilidade</td>
+            <td>2</td>
+          </tr>
+          <tr>
+            <td>Saída de alarme</td>
+            <td>NA ou NF</td>
+          </tr>
+          <tr>
+            <td>Chave antiviolação (tamper)</td>
+            <td>Sim</td>
+          </tr>
+          <tr>
+            <td>Pet Immunity</td>
+            <td>Até 20 kg</td>
+          </tr>
+          <tr>
+            <td>Proteção eletromagnética (Shield)</td>
+            <td>Sim</td>
+          </tr>
+          <tr>
+            <td>Tempo de inicialização</td>
+            <td>60 segundos</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+    <div class="form">
+      <p>Características Elétricas</p>
+    </div>
+
+    <div class="imgs">
+      <table>
+
+        <tbody>
+          <tr>
+            <td>Tensão operacional</td>
+            <td>9 a 16 Vdc</td>
+          </tr>
+          <tr>
+            <td>Corrente de consumo</td>
+            <td>≤ 14 mA</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+    <div class="form">
+      <p>Características Ambientais:</p>
+    </div>
+    <div class="imgs">
+      <table>
+        <tbody>
+          <tr>
+            <td>Temperatura de operação</td>
+            <td>-10°C a +50°C</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </section>
+  <section>
+    <h2 style="font-size: 22px;">3.3.1.2 HC-SR501</h2>
+    <div class="form">
+      <p>Visão Geral:</p>
+    </div>
+    <p>
+      HC-SR501 é um sensor baseado em tecnologia infravermelha, totalmente
+      compatível com Arduino que possui módulo de controle automático, usando
+      design de sonda LHI778 importado da Alemanha, com alta sensibilidade,
+      alta confiabilidade, modo de operação de tensão ultrabaixa, e é
+      amplamente utilizado em vários equipamentos elétricos de detecção
+      automática.
+    </p>
+
+    <div class="imgs">
+      <div class="imgDafault">
+        <img src="./images/manu3.jpg" alt="" srcset="">
+      </div>
+    </div>
+    <div class="form">
+      <p>Aplicação:</p>
+    </div>
+    <p>
+      Luz de detecção automática para piso, banheiro, porão, varanda, armazém,
+      garagem, ventilador, alarme, salas de aula, laboratórios, salas da
+      administração.
+    </p>
+    <div class="form">
+      <p>
+        Funcionamento:
+      </p>
+    </div>
+    <p>
+      O HC-SR501 possui um sensor piroelétrico de alta sensibilidade que
+      consegue detectar a radiação infravermelha emitida pelos corpos. Quanto
+      mais quente está um corpo, maior será a radiação infravermelha emitida.
+      Internamente, esse sensor piroelétrico é dividido em duas metades,
+      formando dois elementos de medição, de modo que uma variação da radiação
+      infravermelha será detectada por esses elementos piroelétricos. O
+      HC-SR501 usa o sensor piroelétrico modelo RE200B, encapsulado em um
+      bloco metálico e hermeticamente fechado. Sobre o sensor RE200B é montado
+      uma lente de Fresnel, modelo NL-11NH, com a finalidade de concentrar a
+      radiação para o ponto onde o sensor piroelétrico está localizado na
+      placa do HC-SR501.
+    </p>
+
+    <div class="imgs">
+      <div class="imgDafault">
+        <img src="./images/manu4.jpg" alt="" srcset="">
+      </div>
+    </div>
+    <div class="form">
+      <p>Especificações:</p>
+    </div>
+    <div class="imgs">
+      <table>
+        <tbody>
+          <tr>
+            <td>Faixa de tensão operacional</td>
+            <td>5-20Vdc</td>
+          </tr>
+          <tr>
+            <td>Corrente de repouso</td>
+            <td>&lt;50uA</td>
+          </tr>
+          <tr>
+            <td>Saída de nível</td>
+            <td>Alto 3,3 V / Baixo 0 V</td>
+          </tr>
+          <tr>
+            <td>Tempo de atraso</td>
+            <td>
+              5-300S (ajustável) Faixa (aproximadamente 0,3 segundos -5
+              minutos)
+            </td>
+          </tr>
+          <tr>
+            <td>Tempo de bloqueio</td>
+            <td>
+              2,5S (padrão). Pode ser feito um intervalo (0,xx a dezenas de
+              segundos)
+            </td>
+          </tr>
+          <tr>
+            <td>Dimensões da placa</td>
+            <td>32mm * 24mm</td>
+          </tr>
+          <tr>
+            <td>Sensor de ângulo</td>
+            <td>Ângulo do cone &lt;110°</td>
+          </tr>
+          <tr>
+            <td>Temperatura de Operação</td>
+            <td>- 15±70 graus</td>
+          </tr>
+          <tr>
+            <td>Sensor de tamanho da lente</td>
+            <td>Diâmetro: 23mm (Padrão)</td>
+          </tr>
+          <tr>
+            <td>Distância detectável</td>
+            <td>3 – 7 m (Ajustável)</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </section>
+  <section>
+    <h2>3.3.2 SENSOR DE INFRAVERMELHO</h2>
+    <h2 style="font-size: 22px;">3.3.3 SENSOR DE TEMPERATURA E UMIDADE
+    </h2>
+    <h2 style="font-size: 22px;">3.3.3.1 AM2301
+    </h2>
+    <div class="form">
+      <p>Visão Geral:
+      </p>
+    </div>
+
+    <p>AM2301 é o módulo sensor capacitivo de temperatura e umidade, que contém o sinal de saída do sensor de
+      temperatura e umidade digital. O módulo inclui um sensor capacitivo molhado, componentes e dispositivos de medição
+      de temperatura de alta precisão, e conectado com um microcontrolador 8 bits de alto desempenho. Interface de
+      barramento único padrão, integração do sistema rápida e fácil. Tamanho pequeno, baixo consumo de energia,
+      distância de transmissão de sinal de até 20 metros, tornando-o a melhor escolha de todos os tipos de aplicações e
+      até mesmo as aplicações mais exigentes. O produto tem excelente qualidade, resposta rápida, forte capacidade
+      anti-interferência e custo benefício.
+    </p>
+
+    <div class="imgs">
+      <div class="imgDafault">
+        <img src="./images/manu5.png" alt="" srcset="">
+      </div>
+    </div>
+
+    <div class="form">
+      <p>Aplicação:</p>
+    </div>
+
+    <p>Climatização, desumidificador, automotivo, controle automático, eletrodomésticos, regulador de umidade,
+      hospitais, estações meteorológicas e outras medidas de umidade e controle.
+
+    </p>
+    <div class="form">
+      <p>Performance:</p>
+      <p>-Umidade:</p>
+    </div>
+    <div class="imgs">
+      <table>
+        <tbody>
+          <tr>
+            <td>Parâmetros</td>
+            <td>Condição</td>
+            <td>Min</td>
+            <td>Típico</td>
+            <td>Max</td>
+            <td>Unidade</td>
+          </tr>
+          <tr>
+            <td>Resolução</td>
+            <td></td>
+            <td></td>
+            <td>0.1</td>
+            <td></td>
+            <td>%RH</td>
+          </tr>
+          <tr>
+            <td>Alcance</td>
+            <td></td>
+            <td>0</td>
+            <td></td>
+            <td>99.9</td>
+            <td>%RH</td>
+          </tr>
+          <tr>
+            <td>Precisão</td>
+            <td>25℃</td>
+            <td></td>
+            <td>±3</td>
+            <td></td>
+            <td>%RH</td>
+          </tr>
+          <tr>
+            <td>Repetibilidade</td>
+            <td></td>
+            <td></td>
+            <td>±1</td>
+            <td></td>
+            <td>%RH</td>
+          </tr>
+          <tr>
+            <td>Troca</td>
+            <td></td>
+            <td colspan="4">Completamente intercambiável</td>
+          </tr>
+          <tr>
+            <td>Resposta</td>
+            <td>1/e(63%)</td>
+            <td></td>
+            <td>&lt;6</td>
+            <td></td>
+            <td>S</td>
+          </tr>
+          <tr>
+            <td>Lento</td>
+            <td></td>
+            <td></td>
+            <td>±0.3</td>
+            <td></td>
+            <td>%RH</td>
+          </tr>
+          <tr>
+            <td>Movimento</td>
+            <td>Típico</td>
+            <td></td>
+            <td>&lt;0.5</td>
+            <td></td>
+            <td>%RH/yr</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+    <div class="form">
+      <p>-Temperatura:
+      </p>
+    </div>
+    <div class="imgs">
+      <table>
+        <tbody>
+          <tr>
+            <td>Parâmetros</td>
+            <td>Condição</td>
+            <td>Min</td>
+            <td>Típico</td>
+            <td>Max</td>
+            <td>Unidade</td>
+          </tr>
+          <tr>
+            <td rowspan="2">Resolução</td>
+            <td></td>
+            <td>0.1</td>
+            <td></td>
+            <td></td>
+            <td>℃</td>
+          </tr>
+          <tr>
+            <td></td>
+            <td>16</td>
+            <td></td>
+            <td></td>
+            <td>bit</td>
+          </tr>
+          <tr>
+            <td>Precisão</td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+          </tr>
+          <tr>
+            <td>Alcance</td>
+            <td></td>
+            <td>-40</td>
+            <td></td>
+            <td>80</td>
+            <td>℃</td>
+          </tr>
+          <tr>
+            <td>Repetições</td>
+            <td></td>
+            <td></td>
+            <td>±0.2</td>
+            <td></td>
+            <td>℃</td>
+          </tr>
+          <tr>
+            <td>Troca</td>
+            <td></td>
+            <td colspan="4">Completamente intercambiável</td>
+          </tr>
+          <tr>
+            <td>Resposta</td>
+            <td>1/e(63%)</td>
+            <td></td>
+            <td>&lt;10 </td>
+            <td></td>
+            <td>S</td>
+          </tr>
+          <tr>
+            <td>Movimento</td>
+            <td></td>
+            <td></td>
+            <td>±0.3</td>
+            <td></td>
+            <td>℃/yr</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+    <div class="form">
+      <p>Características Elétricas:</p>
+    </div>
+    <div class="imgs">
+      <table>
+        <tbody>
+          <tr>
+            <td>Parâmetros</td>
+            <td>Condição</td>
+            <td>Min</td>
+            <td>Típico</td>
+            <td>Max</td>
+            <td>Unidade</td>
+          </tr>
+          <tr>
+            <td>Voltagem</td>
+            <td></td>
+            <td>3.3</td>
+            <td>5</td>
+            <td>5.2</td>
+            <td>V</td>
+          </tr>
+          <tr>
+            <td rowspan="3">Consumo de Energia</td>
+            <td>Suspenso</td>
+            <td>10</td>
+            <td>15</td>
+            <td></td>
+            <td>µA</td>
+          </tr>
+          <tr>
+            <td>Medindo</td>
+            <td></td>
+            <td>500</td>
+            <td></td>
+            <td>µA</td>
+          </tr>
+          <tr>
+            <td>Média</td>
+            <td></td>
+            <td>300</td>
+            <td></td>
+            <td>µA</td>
+          </tr>
+          <tr>
+            <td>Tensão de Saída de Baixo Nível</td>
+            <td>IOL</td>
+            <td>0</td>
+            <td></td>
+            <td>300</td>
+            <td>mV</td>
+          </tr>
+          <tr>
+            <td>Tensão de Saída Alta</td>
+            <td>Rp&lt;25 kΩ</td>
+            <td>90%</td>
+            <td></td>
+            <td>100%</td>
+            <td>VDD</td>
+          </tr>
+          <tr>
+            <td>Baixa Tensão de Entrada</td>
+            <td>Diminuir</td>
+            <td>0%</td>
+            <td></td>
+            <td>30%</td>
+            <td>VDD</td>
+          </tr>
+          <tr>
+            <td>Alta Tensão de Entrada</td>
+            <td>Aumentar</td>
+            <td>70%</td>
+            <td></td>
+            <td>100%</td>
+            <td>VDD</td>
+          </tr>
+          <tr>
+            <td>Rpu</td>
+            <td>VDD = 5V<br>VIN = VSS</td>
+            <td>30</td>
+            <td>45</td>
+            <td>60</td>
+            <td>kΩ</td>
+          </tr>
+          <tr>
+            <td rowspan="2">Corrente de saída</td>
+            <td>Ligar</td>
+            <td></td>
+            <td>8</td>
+            <td></td>
+            <td>mA</td>
+          </tr>
+          <tr>
+            <td>Desligar</td>
+            <td>10</td>
+            <td>20</td>
+            <td></td>
+            <td>µA</td>
+          </tr>
+          <tr>
+            <td>Período de Amostragem</td>
+            <td></td>
+            <td>2</td>
+            <td></td>
+            <td></td>
+            <td>S</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+    <h2 style="font-size: 22px;">4.3.3.2 DHT11
+    </h2>
+    <div class="form">
+      <p>Visão Geral:
+      </p>
+    </div>
+    <p>O sensor de temperatura e umidade DHT11 possui um sensor de temperatura e umidade complexo com uma saída de sinal
+      digital calibrada. Este sensor inclui uma medição de umidade do tipo resistivo componente e um componente de
+      medição de temperatura NTC, e se conecta a um microcontrolador de 8 bits de alto desempenho, oferecendo excelente
+      qualidade, resposta rápida, anti-interferência, capacidade e custo-benefício.
+    </p>
+
+    <div class="imgs">
+      <div class="imgDafault">
+        <img src="./images/manu6.png" alt="" srcset="">
+      </div>
+    </div>
+    <div class="form">
+      <p>Características Elétricas:</p>
+    </div>
+    <div class="imgs">
+      <table>
+        <tbody>
+          <tr>
+            <td></td>
+            <td>Condição</td>
+            <td>Min</td>
+            <td>Típico</td>
+            <td>Max</td>
+          </tr>
+          <tr>
+            <td>Fonte de Energia</td>
+            <td>CC</td>
+            <td>3V</td>
+            <td>5V</td>
+            <td>5.5V</td>
+          </tr>
+          <tr>
+            <td>Corrente Atual</td>
+            <td>Medindo</td>
+            <td>0.5mA</td>
+            <td></td>
+            <td>2.5mA</td>
+          </tr>
+          <tr>
+            <td></td>
+            <td>Média</td>
+            <td>0.2mA</td>
+            <td></td>
+            <td>1mA</td>
+          </tr>
+          <tr>
+            <td></td>
+            <td>Espera</td>
+            <td>100uA</td>
+            <td></td>
+            <td>150uA</td>
+          </tr>
+          <tr>
+
+
+            <td>Período Amostra</td>
+            <td>Segundo</td>
+            <td>1</td>
+            <td></td>
+            <td></td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+    <div class="form">
+      <p>Especificações Detalhadas:</p>
+    </div>
+    <div class="imgs">
+      <table>
+        <thead>
+          <tr>
+            <th>Parâmetros</th>
+            <th>Condição</th>
+            <th>Min</th>
+            <th>Típico</th>
+            <th>Max</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td colspan="5">Umidade</td>
+          </tr>
+          <tr>
+            <td>Resolução</td>
+            <td></td>
+            <td>1%RH</td>
+            <td>1%RH</td>
+            <td>1%RH</td>
+          </tr>
+          <tr>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td>8bit</td>
+            <td></td>
+          </tr>
+          <tr>
+            <td>Repetibilidade</td>
+            <td></td>
+            <td></td>
+            <td>±1%RH </td>
+            <td></td>
+          </tr>
+          <tr>
+            <td>Precisão</td>
+            <td>25℃</td>
+            <td></td>
+            <td>±4%RH </td>
+            <td></td>
+          </tr>
+          <tr>
+            <td></td>
+            <td>0-50℃</td>
+            <td></td>
+            <td></td>
+            <td>±5%RH </td>
+          </tr>
+          <tr>
+            <td>Intercambiabilidade</td>
+            <td>Totalmente intercambiável</td>
+            <td></td>
+            <td></td>
+            <td></td>
+          </tr>
+          <tr>
+            <td rowspan="3">Alcance de Medição</td>
+            <td>0℃</td>
+            <td>30%RH</td>
+            <td></td>
+            <td>90%RH</td>
+          </tr>
+          <tr>
+            <td>25℃</td>
+            <td>20%RH</td>
+            <td></td>
+            <td>80%RH</td>
+          </tr>
+          <tr>
+            <td>50℃</td>
+            <td>20%RH</td>
+            <td></td>
+            <td>80%RH</td>
+          </tr>
+          <tr>
+            <td>Tempo de Resposta (segundos)</td>
+            <td>1/e(63%)25℃，1 m/s Ar</td>
+            <td>6 s</td>
+            <td>10 s</td>
+            <td>15 s</td>
+          </tr>
+          <tr>
+            <td>Histerese</td>
+            <td></td>
+            <td>±1%RH </td>
+            <td></td>
+            <td></td>
+          </tr>
+          <tr>
+            <td>Estabilidade Longo Prazo</td>
+            <td>Típico</td>
+            <td></td>
+            <td>±1%RH/ano</td>
+            <td></td>
+          </tr>
+          <tr>
+            <td colspan="5">Temperatura</td>
+          </tr>
+          <tr>
+            <td rowspan="2">Resolução</td>
+            <td></td>
+            <td>1℃</td>
+            <td>1℃</td>
+            <td>1℃</td>
+          </tr>
+          <tr>
+            <td></td>
+            <td>8 Bit</td>
+            <td>8 Bit</td>
+            <td>8 Bit</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+    <div class="imgs">
+      <table>
+        <thead>
+          <tr>
+            <th>Repetibilidade</th>
+            <th></th>
+            <th></th>
+            <th>±1℃</th>
+            <th></th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td></td>
+            <td></td>
+            <td>±1℃</td>
+            <td></td>
+            <td>±1℃</td>
+          </tr>
+          <tr>
+            <td>Alcance de Medição</td>
+            <td>0℃</td>
+            <td></td>
+            <td></td>
+            <td>50℃</td>
+          </tr>
+          <tr>
+            <td>Tempo de Resposta (segundos)</td>
+            <td>1/e(63%) </td>
+            <td>6 s</td>
+            <td></td>
+            <td>30 s</td>
+          </tr>
+          <tr>
+            <td>(segundos)</td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+
+
+
+
+
+    <div class="form">
+      <p>Energia e Pinos:</p>
+    </div>
+    <p>A fonte de alimentação do DHT11 é 3 - 5,5V CC. Quando a energia é fornecida ao sensor, não enviar nenhuma
+      instrução para o sensor dentro de um segundo, para passar o status instável. Um capacitor com valor de 100nF pode
+      ser adicionado entre VDD e GND para filtragem de energia.</p>
+
+  </section>
+
+
+  <section>
+    <h2>4.3.4 SENSOR DE LUZ (LUXÍMETRO)</h2>
+    <h2 style="font-size: 22px;">4.3.5 ATUADOR DE CONTATO (RELÉ)
+    </h2>
+    <h2 style="font-size: 22px;">4.3.5.X MÓDULO DE RELÉ DE CONTATO SECO (5v)
+    </h2>
+    <div class="form">
+      <p>Descrição:
+      </p>
+    </div>
+    <p>Com o Módulo Relé 5v 1 Canal você pode controlar lâmpadas, motores, eletrodomésticos e outros equipamentos
+      utilizando apenas um pino de controle, já que o circuito a ser alimentado fica completamente isolado do circuito
+      do microcontrolador. Fácil utilização com Arduino.
+    </p>
+    <p>O módulo relé 1 canal funciona com tensão de 5v, e pode acionar cargas de até 250 VAC ou 30 VDC, suportando uma
+      corrente máxima de 10 A. Possui led indicador de energia, 2 pinos de energia e 1 de controle, além do borne de
+      saída com parafusos, facilitando a conexão dos equipamentos.
+    </p>
+
+    <div class="imgs">
+      <div class="imgDafault">
+        <img src="./images/manu7.png" alt="" srcset="">
+      </div>
+    </div>
+    <div class="form">
+      <p>Especificações:
+      </p>
+    </div>
+    <ul>
+      <li>Modelo: JQC-3FF-S-Z;
+      </li>
+      <li>Tensão de operação: 5 VDC;
+      </li>
+      <li>Permite controlar cargas de até 220V AC;
+      </li>
+      <li>Corrente nominal: 71,4 mA;
+      </li>
+      <li>LED indicador de status;
+      </li>
+      <li>Pinagem: Normal Aberto, Normal Fechado e Comum;
+      </li>
+      <li>Tensão de saída: (28 VDC a 10A) ou (250VAC a 10A) ou (125VAC a 15A);
+      </li>
+      <li>Furos de 3mm para fixação nas extremidades da placa;
+      </li>
+      <li>Tempo de resposta: 5~10ms;
+      </li>
+      <li>Dimensões: 26 mm x 33 mm x 18 mm;
+      </li>
+      <li>Peso: 18 g;
+
+      </li>
+    </ul>
+
+    <div cla></div>
+    <p>Especificações módulos de relé de contato seco (5v e 12v):</p>
+
+  </section>
+</body>
+
+</html>

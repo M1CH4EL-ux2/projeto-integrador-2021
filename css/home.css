@@ -30,7 +30,7 @@ h2 {
   background-color: rgb(148, 148, 148);
 }
 body {
-  background-image: url(./images/fundo.jpeg);
+  background-image: url(../images/fundo.jpeg);
   display: flex;
   justify-content: center;
   align-items: center;
