@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>html projeto integrador</title>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" href="index.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Barlow:wght@300&family=Open+Sans:wght@300&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <header>
+      <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="introdução.html">Introdução</a></li>
+          <li><a href="Redes.html">Redes</a></li>
+          <li>
+            <a href="Bancodedados.html"
+              >Banco de dados</a>
+          </li>
+          <li><a href="Autoria.html">Autoria Web</a></li>
+          <li>
+              <a href="Organização.html"
+                >Manutenção de computadores</a>
+            </li>
+          <li>
+            <a href="Eletronica.html">Eletroeletrônica</a>
+          </li>
+          <li><a href="finalização.html">Considerações finais</a></li>
+        </ul>
+      </nav>
+    </header>
+
+<section>
+
+  <h1>2 ARQUITETURA DE REDES DE COMPUTADORES E TECNOLOGIA DE IMPLEMENTAÇÃO DE REDES
+  <h2>2.1 INTRODUÇÃO AO CAPÍTULO 2</h2>
+  <p>
+    Neste capítulo trabalhamos as especificações das matérias Arquitetura de redes de computadores e tecnologia de implementação de redes,  que tem como objetivo compreender o modelo TCP/IP, 
+    configurando-o em uma pequena rede e conhecer os recursos de utilizados no projeto físico de uma rede de computadores; Programação com acesso a banco de dados, com a finalidade os conceitos de banco de dados. Modelos de dados e linguagens de modelagem. Projeto de banco de dados. Linguagem de consulta estruturada (SQL). Compreender e aplicar técnicas de programação em bancos de dados; Autoria web, com intenção de criar páginas usando linguagem de marcação de texto e hipermídia. Aplicar folhas de estilo em página web; Organização e manutenção de computadores; com a intenção de compreender o funcionamento dos microcomputadores e periféricos com objetivo de realizar manutenção preventiva e corretiva em microcomputadores; e por fim Eletroeletrônica, com a intenção de utilizar a eletricidade instrumental e eletrônica analógica e digital como apoio a área de conhecimento informática e de manutenção de computadores. 
+  </p>   
+  <div class="form">
+    <p>
+        Equipe responsável:
+    </p>
+  </div>
+        <ul >
+            <li>Iglyson Andrey Assunção Silva
+            <li>Pedro Ruan Cavalcante Nunes
+            <li>Viviane Oliveira dos Santos
+            <li>Jose Macedo Firmino Filho (prof orientador)
+            </ul>
+     <p>
+        O presente trabalho tem como objetivo especificar uma arquitetura de um sistema inteligente para atuação no controle e monitoramento de equipamentos de ares-condicionados e iluminação. Desta forma, precisa-se que ocorra uma comunicação entre os dispositivos de coletas de informações e atuação
+         (chamados de nós sensores) e entre o dispositivo que irá realizar o gerenciamento centralizado (chamado de servidor). 
+     </p>
+
+     <p> 
+        Os nós sensores irão realizar a coleta de dados sobre o funcionamento dos ares-condicionados e luzes. Eles ainda poderão ligar ou desligar os equipamentos quando solicitados pelo servidor central. O servidor central por sua vez irá receber as informações dos nós sensores e disponibilizá-las numa interface para os usuários. Os usuários poderão ainda, através desta interface, ligar e desligar os equipamentos.
+    </p>
+     <p>
+        Para que a aplicação ocorra normalmente, deverá existir uma comunicação entre o servidor e os nós sensores. Além disso, deverá ter uma comunicação do servidor com a Internet para permitir o monitoramento e controle do sistema de forma remota. Depois de realizada uma pesquisa bibliográfica, foi observado que a comunicação entre os servidores e os nós sensores (chamada  de rede de monitoramento) deveria utilizar o protocolo wi-fi IEEE 802.11ac. Este protocolo foi escolhido pois permite mobilidade aos nós sensores, sem a necessidade da utilização de  cabos, e devido a infraestrutura da escola IFRN já possuir uma rede IEEE 802.11 implantada. 
+    </p>
+    <div class="form">
+    <p>
+        Rede de monitoramento:
+    </p>
+  </div>
+    <ul>
+        <li>Endereço IP: 192.168.0.0;
+        <li>Máscara de rede: 255.255.255.0;
+        <li>Endereço do Servidor: 192.168.0.1;
+        <li>Endereço dos nós sensores: de 192.168.0.2 até 192.168.0.254.
+        <li>Protocolo de Comunicação: IEEE 802.11 ac
+        </ul>
+        <p>
+          Para acessar a Internet, o servidor precisará ser inserido também em uma rede de acesso com IP real e fixo. Este recurso se faz necessária para que os usuários acessem o mesmo de forma remota. Desta forma, o IFRN deverá utilizar estes recursos. O protocolo de comunicação entre o servidor e Internet sugerimos o Gigabit Ethernet com fibra óptica. Por exemplo:
+        </p>
+        <div class="form">
+        <p>
+            Rede de Acesso:
+        </p>
+      </div>
+        <ul>
+            <li>Endereço IP do Servidor: 200.0.0.1;
+            <li>Máscara: 255.255.255.253;
+            <li>Protocolo de Comunicação: Gigabit Ethernet com fibra óptica.
+            </ul>
+            <p>
+                Na sequência será apresentado uma Figura que irá ilustrar a comunicação da arquitetura proposta.
+
+            </p>
+            <div class="imgs"> 
+              <div class="imgDafault">
+            <img src="./images/arquitetura.jpg" alt="" srcset="">
+           </div>
+          </div>
+          
+</section>
+  </body>  

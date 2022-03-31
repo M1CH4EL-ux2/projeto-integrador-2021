@@ -1,0 +1,174 @@
+body {
+  padding: 60px;
+  text-align: justify;
+}
+
+.boxBlack {
+  width: 35%;
+  height: 100%;
+  background-color: black;
+  float: right;
+}
+
+.imgs {
+  margin-bottom: 50px;
+  width: 100%;
+  height: 30%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.imgDafault {
+  border-radius: 8px;
+  border: solid 1px rgb(97, 97, 97);
+  margin-bottom: 50px;
+  display: flex;
+  justify-content: center;
+  width: 70%;
+  height: 20%;
+}
+
+main {
+  color: white;
+}
+
+a {
+  font-family: "Barlow", sans-serif;
+  font-family: "Open Sans", sans-serif;
+}
+
+header {
+  margin-bottom: 5cm;
+  justify-content: center;
+  background: #c3c3c3;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 80px;
+  display: flex;
+  align-items: center;
+  box-shadow: 0 0 15px 0 rgb(58, 58, 58);
+}
+
+.boxBlack {
+  width: 20%;
+  height: 100vh;
+  background-color: black;
+  float: right;
+}
+header * {
+  display: inline;
+}
+
+header li {
+  margin: 20px;
+}
+
+header li a {
+  color: rgb(43, 43, 43);
+  text-decoration: none;
+}
+
+header li a:hover {
+  color: #000000;
+  font-weight: 600;
+}
+a {
+  color: #292929;
+}
+h1,
+h2,
+table {
+  font-family: "Open Sans", sans-serif;
+}
+table {
+  text-align: center;
+}
+
+h1 {
+  font-size: 40px;
+  margin-top: 3cm;
+}
+h2 {
+  font-size: 32px;
+}
+ol,
+ul,
+p {
+  font-family: "Open Sans", sans-serif;
+  font-size: 16px;
+  color: #383838;
+  margin-bottom: 20px;
+}
+
+.form {
+  font-weight: 600;
+}
+
+table {
+  border-collapse: collapse;
+  width: 45%;
+  margin-bottom: 40px;
+}
+
+table caption {
+  margin-bottom: 20px;
+  font-size: 15px;
+  font-weight: 600;
+}
+
+tr,
+td {
+  border-collapse: collapse;
+  border: 1px solid #000000;
+}
+
+td {
+  padding: 10px;
+  width: 50%;
+}
+
+@media only screen and (max-device-width: 400px) {
+  html {
+    width: 100vw;
+  }
+
+  .imgDafault {
+    width: 95%;
+  }
+
+  img {
+    width: 100%;
+  }
+
+  p {
+    margin-bottom: 2cm;
+  }
+
+  h1 {
+    margin-top: 2cm;
+    margin-bottom: 40px;
+    font-size: 20px;
+  }
+
+  h2 {
+    font-size: 15px;
+  }
+
+  header {
+    display: none;
+  }
+
+  table {
+    width: 90%;
+    font-size: 32px;
+  }
+
+  td,
+  caption {
+    font-size: 22px;
+  }
+}
