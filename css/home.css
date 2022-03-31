@@ -1,8 +1,7 @@
-
-.mainall {
-  display: flex;
-  justify-content: center;
-  flex-direction: column;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 h1 {
@@ -55,6 +54,11 @@ body {
 }
 
 @media only screen and (max-device-width: 400px) {
+  body {
+    height: 100vh;
+    padding: 5rem;
+  }
+
   .btnStart {
     width: 20rem;
     height: 5rem;
