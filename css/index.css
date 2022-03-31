@@ -1,6 +1,6 @@
 body {
-  padding: 60px;
   text-align: justify;
+  padding: 60px;
 }
 
 .boxBlack {
@@ -35,7 +35,6 @@ main {
 }
 
 a {
-  font-family: "Barlow", sans-serif;
   font-family: "Open Sans", sans-serif;
 }
 
@@ -76,14 +75,17 @@ header li a:hover {
   color: #000000;
   font-weight: 600;
 }
+
 a {
   color: #292929;
 }
+
 h1,
 h2,
 table {
   font-family: "Open Sans", sans-serif;
 }
+
 table {
   text-align: center;
 }
@@ -92,9 +94,11 @@ h1 {
   font-size: 40px;
   margin-top: 3cm;
 }
+
 h2 {
   font-size: 32px;
 }
+
 ol,
 ul,
 p {
@@ -136,6 +140,10 @@ td {
     width: 100vw;
   }
 
+  body {
+    padding: 20px;
+  }
+
   .imgDafault {
     width: 95%;
   }
@@ -160,6 +168,7 @@ td {
 
   header {
     display: none;
+    visibility: hidden;
   }
 
   table {

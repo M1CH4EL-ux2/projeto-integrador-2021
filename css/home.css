@@ -1,19 +1,23 @@
+
 .mainall {
   display: flex;
   justify-content: center;
   flex-direction: column;
 }
+
 h1 {
   color: white;
 
   font-family: "Spartan", sans-serif;
   font-size: 80px;
 }
+
 h2 {
   color: white;
   font-size: 30px;
   font-family: "Raleway", sans-serif;
 }
+
 .btnStart {
   font-family: "Spartan", sans-serif;
   width: 100px;
@@ -25,11 +29,15 @@ h2 {
   font-size: 18px;
   cursor: pointer;
 }
+
 .btnStart:hover {
   transition: 1s;
   background-color: rgb(148, 148, 148);
 }
+
 body {
+  height: 100vh;
+  padding: 5rem;
   background-image: url(../images/fundo.jpeg);
   display: flex;
   justify-content: center;
@@ -38,9 +46,17 @@ body {
   background-position: center;
   background-size: cover;
 }
+
 .main {
   margin-bottom: 50px;
   display: flex;
   justify-content: center;
   flex-direction: column;
+}
+
+@media only screen and (max-device-width: 400px) {
+  .btnStart {
+    width: 20rem;
+    height: 5rem;
+  }
 }
