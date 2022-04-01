@@ -15,6 +15,7 @@
 </head>
 
 <body>
+  <button class="btnShow"><img src="../images/reorder_black_24dp.svg" alt=""></button>
   <header>
     <div>
       <nav>
@@ -269,9 +270,12 @@
 
     <p>
       RESULT = {"IRHVAC":"Wrong Vendor
-      (COOLIX|DAIKIN|KELVINATOR|MITSUBISHI_AC|GREE|ARGO|TROTEC|TOSHIBA_AC|FUJITSU_AC|MIDEA|HAIER_AC|HITACHI_AC| <br>
-      HAIER_AC_YRW02|WHIRLPOOL_AC|SAMSUNG_AC|ELECTRA_AC|PANASONIC_AC|DAIKIN2|VESTEL_AC|TECO|TCL112AC| <br>
-      MITSUBISHI_HEAVY_88|MITSUBISHI_HEAVY_152|DAIKIN216|SHARP_AC|GOODWEATHER|DAIKIN160|NEOCLIMA|DAIKIN176|DAIKIN128|AMCOR)"}
+      (COOLIX|DAIKIN|KELVINATOR|<br>MITSUBISHI_AC|GREE|ARGO|TROTEC|<br>TOSHIBA_AC|FUJITSU_AC|MIDEA|<br>HAIER_AC|HITACHI_AC| <br>
+      HAIER_AC_YRW02|WHIRLPOOL_AC|<br>SAMSUNG_AC|<br>ELECTRA_AC|PANASONIC_AC|DAIKIN2|<br>VESTEL_AC|TECO|TCL112AC|
+      <br> 
+      MITSUBISHI_HEAVY_88|<br>MITSUBISHI_HEAVY_152|DAIKIN216|<br>SHARP_AC|<br>GOODWEATHER|DAIKIN160|<br>NEOCLIMA|DAIKIN176|
+      <br>
+      DAIKIN128|AMCOR)"}
     </p>
 
     <p>Envio de comandos IR</p>
@@ -299,36 +303,36 @@
       or
       <br><br>
     </p>
-    <p>= data frame as 64 bit hexadecimal with LSB (each byte with bits reversed).
+    <p> data frame as 64 bit hexadecimal with LSB (each byte with bits reversed).
       <br><br> e.g.,
     </p>
     <p>comes handy with LSB-first (Least Significant Bit First) protocols like NEC, and makes decoding/encoding easier.
       <br>
       if send the frame once, if simulates a long press; Note: sends the message twice.
     </p>
-    <p>Alternatively, you can send IR remote control codes using RAW command encoding.0..1>1<x>{"Protocol":"<value>
-          ","Bits":<value>,"Data":<value>,"DataLSB":<value>,"Repeat":<value>}"Protocol""Vendor"RC5, RC6, NEC, SONY,
-                  PANASONIC, JVC, SAMSUNG, WHYNTER, AIWA_RC_T501, LG, MITSUBISHI, DISH, SHARP, DENON, SHERWOOD, RCMM,
-                  SANYO_LC7461, RC5X, NEC (non-strict), NIKAI, MAGIQUEST, LASERTAG, CARRIER_AC,
+    <p>Alternatively, you can send IR remote control<br> codes using RAW command encoding.0..1>1<x><br>{"Protocol":"<value>
+          ","Bits":<value>,"Data":<value>,"DataLSB":<value>,<br>"Repeat":<value>}<br>"Protocol""Vendor"<br>RC5, RC6, NEC, SONY,<br>
+                  PANASONIC, JVC, SAMSUNG, WHYNTER,<br> AIWA_RC_T501, LG, MITSUBISHI,<br> DISH, SHARP, DENON, SHERWOOD, RCMM,<br>
+                  SANYO_LC7461, RC5X,<br> NEC (non-strict), NIKAI, MAGIQUEST, LASERTAG, CARRIER_AC,<br>
                   MITSUBISHI2, HITACHI_AC1, HITACHI_AC2, GICABLE, LUTRON, PIONEER, LG2, SAMSUNG36,
-                  LEGOPF, INAX, DAIKIN152"Bits":1..64"Data":0x1..0xFFFFFFFFFFFFFFFFIRsend
-                  {"Protocol":"NEC","Bits":32,"Data":0x8166817E}"DataLSB":0x1..0xFFFFFFFFFFFFFFFFIRsend
-                  {"Protocol":"NEC","Bits":
-                  32,"Data":0x8166817E}DataLSB"Repeat":0..<x>0>0"Repeat":1
+                  LEGOPF, INAX, <br>DAIKIN152"Bits":1..64"Data"<br>:0x1..0xFFFFFFFFFFFFFFFFIRsend<br>
+                  {"Protocol":"NEC"<br>,"Bits":32,"Data":0x8166817E}"DataLSB"<br>:0x1..0xFFFFFFFFFFFFFFFFIRsend
+                  {"Protocol":"NEC","Bits":<br>
+                  32,"Data":0x8166817E}<br>DataLSB"Repeat":0..<x>0>0"Repeat":1
     </p>
     <p>Envio de comandos IRHVAC <br><br>
       IRhvac Send HVAC IR remote control code as JSON payload <br><br>
       or (select one of the following):
     </p>
     <p>
-      Some HVAC have variants in protocols, this field allows to specify the variant,
-      see detailed list.IRhvac {"Vendor":"Mitsubishi_Heavy_152",
-      "Power":"On","Mode":"Hot","FanSpeed":3,"Temp":22.5}"Protocol""Vendor"COOLIX, DAIKIN, KELVINATOR, MITSUBISHI_AC,
-      GREE, ARGO, TROTEC, TOSHIBA_AC,
-      FUJITSU_AC, MIDEA, HAIER_AC, HITACHI_AC, HAIER_AC_YRW02,
-      WHIRLPOOL_AC, SAMSUNG_AC, ELECTRA_AC, PANASONIC_AC, DAIKIN2,
-      VESTEL_AC, TECO, TCL112AC, MITSUBISHI_HEAVY_88, MITSUBISHI_HEAVY_152,
-      DAIKIN216, SHARP_AC, GOODWEATHER, DAIKIN160, NEOCLIMA, DAIKIN176,
+      Some HVAC have variants in protocols,<br> this field allows to specify the variant,<br>
+      see detailed<br> list.IRhvac <br>{"Vendor":"Mitsubishi_Heavy_152",
+      "Power":"On","Mode":<br>"Hot","FanSpeed":3<br>,"Temp":22.5}"Protocol"<br>"Vendor"COOLIX, DAIKIN, <br>KELVINATOR, MITSUBISHI_AC,<br>
+      GREE, ARGO, TROTEC, TOSHIBA_AC,<br>
+      FUJITSU_AC, MIDEA, HAIER_AC, HITACHI_AC, HAIER_AC_YRW02,<br>
+      WHIRLPOOL_AC, SAMSUNG_AC, ELECTRA_AC, PANASONIC_AC, DAIKIN2,<br>
+      VESTEL_AC, TECO, TCL112AC, MITSUBISHI_HEAVY_88, MITSUBISHI_HEAVY_152,<br>
+      DAIKIN216, SHARP_AC, GOODWEATHER, DAIKIN160, NEOCLIMA, DAIKIN176,<br>
       DAIKIN128"Model":</p>
     <p>
       "Power":<br>
@@ -354,7 +358,7 @@
 
     </p>
     <p>
-      :"On""Off""Temp""Quiet""On""Off""Turbo""On""Off""Econo""On""Off""Light""On""Off""Filter""On""Off""Clean""On""Off""Beep""On""Off""Sleep""StateMode"
+      :"On""Off""Temp"<br>"Quiet""On""Off"<br>"Turbo""On"<br>"Off""Econo""On"<br>"Off""Light"<br>"On""Off"<br>"Filter""On""Off""Clean"<br>"On""Off""Beep"<br>"On""Off"<br>"Sleep""StateMode"
     </p>
 
     <div class="imgs">
@@ -377,7 +381,35 @@
 
   </section>
 
+  <div class="bgModal show">
+    <div class="modal">
+      <div>
+        <nav>
+          <ul>
+            <li id="homebtn">
+              <a href="../index.html">Home</a>
+            </li>
+            <li><a href="introducao.html">Introdução</a></li>
+            <li><a href="redes.html">Redes</a></li>
+            <li>
+              <a href="bancodedados.html">Banco de dados</a>
+            </li>
+            <li><a href="autoria.html">Autoria Web</a></li>
+            <li>
+              <a href="organizacao.html">Manutenção de computadores</a>
+            </li>
+            <li>
+              <a href="eletronica.html">Eletroeletrônica</a>
+            </li>
+            <li><a href="finalizacao.html">Considerações finais</a></li>
+          </ul>
+        </nav>
+      </div>
+      <button class="closeModal">X</button>
+    </div>
+  </div>
 
+  <script src="../js/modal.js"></script>
 </body>
 
 </html>

@@ -5,6 +5,7 @@
   <title>html projeto integrador</title>
   <meta charset="UTF-8" />
   <link rel="stylesheet" href="../css/index.css" />
+  <link rel="stylesheet" href="../css/modal.css">
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap" rel="stylesheet" />
@@ -15,6 +16,7 @@
 </head>
 
 <body>
+  <button class="btnShow">opan</button>
   <header>
     <div>
       <nav>
@@ -111,6 +113,36 @@
   <div class="imgs">
     <img src="../images/banco7.png" alt="" srcset="">
   </div>
+
+  <div class="bgModal show">
+    <div class="modal">
+      <div>
+        <nav>
+          <ul>
+            <li id="homebtn">
+              <a href="../index.html">Home</a>
+            </li>
+            <li><a href="introducao.html">Introdução</a></li>
+            <li><a href="redes.html">Redes</a></li>
+            <li>
+              <a href="bancodedados.html">Banco de dados</a>
+            </li>
+            <li><a href="autoria.html">Autoria Web</a></li>
+            <li>
+              <a href="organizacao.html">Manutenção de computadores</a>
+            </li>
+            <li>
+              <a href="eletronica.html">Eletroeletrônica</a>
+            </li>
+            <li><a href="finalizacao.html">Considerações finais</a></li>
+          </ul>
+        </nav>
+      </div>
+      <button class="closeModal">X</button>
+    </div>
+  </div>
+
+  <script src="../js/modal.js"></script>
 </body>
 
 </html>
