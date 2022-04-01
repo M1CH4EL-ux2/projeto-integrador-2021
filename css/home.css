@@ -55,7 +55,7 @@ h2 {
   flex-direction: column;
 }
 
-@media only screen and (max-device-width: 400px) {
+@media only screen and (max-device-width: 480px) {
   body {
     height: 100vh;
     padding: 5rem;
