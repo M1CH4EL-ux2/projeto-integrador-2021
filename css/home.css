@@ -27,7 +27,7 @@ h1 {
 
 h2 {
   color: white;
-  font-size: 20px;
+  font-size: 40px;
   font-family: "Raleway", sans-serif;
 }
 
@@ -62,7 +62,7 @@ h2 {
   }
 
   .btnStart {
-    width: 20rem;
-    height: 5rem;
+    width: 40rem;
+    height: 15rem;
   }
 }

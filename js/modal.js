@@ -1,5 +1,5 @@
 const open = document.querySelector('.btnShow');
-const close = document.querySelector('.closeModal');
+const close = document.getElementById('closeModal')
 
 const modal = document.querySelector('.bgModal');
 

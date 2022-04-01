@@ -15,11 +15,28 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Barlow:wght@300&family=Open+Sans:wght@300&display=swap"
     rel="stylesheet" />
+
+  <style>
+    .btnShow {
+      width: 2rem;
+      height: 2rem;
+    }
+
+    .bgModal .modal div nav ul li a {
+      font-size: 2rem;
+      text-decoration: none;
+    }
+
+    .bgModal .modal .closeModal {
+        width: 2rem;
+        height: 2rem;
+    }
+    
+  </style>
 </head>
 
 <body>
-  <button class="btnShow"><img src="../images/reorder_black_24dp.svg" alt=""></button>
-  <section>
+  <button class="btnShow"><img src="../images/reorder_black_24dp.svg" alt="" width="2rem"></button>
   <header>
     <div>
       <nav>
@@ -44,14 +61,14 @@
       </nav>
     </div>
   </header>
-  
+  <section>
+    
     <h1>1 INTRODUÇÃO</h1>
     <p>
       Este trabalho apresenta uma especificação de um sistema inteligente no IFRN,
       esse sistema irá controlar e monitorar os ares-condicionados
       e de luzes em ambientes específicos.
     </p>
-
     <p>
       Aqui estão as equipes responsáveis ​​pela gestão de todo o programa
       (limitado a 7 alunos por grupo):
@@ -83,18 +100,14 @@
         brasileiro é Mode Cool (Frio).
       </li>
     </ol>
-
     <h2>1.2 OBJETIVO</h2>
-
     <p>Este trabalho tem como objetivo especificar dispositivos que promovam a
       aplicabilidade de um sistema inteligente na instituição de ensino com atuação
       direta nos ambientes que utilizam equipamentos de ares-condicionados,
       e também, necessitam de iluminação adequada para que as atividades sejam
       desenvolvidas efetivamente,utilizando equipamentos monitoram automaticamente
       a utilização dos elementos,e assim, fomentar o uso racional dos equipamentos.</p>
-
     <h2>1.3 JUSTIFICATIVA</h2>
-
     <p>A Este projeto de automatização torna-se imprescindível visto que nos ambientes:
       Sala dos servidores, Laboratório de Manutenção de Computadores (LAMAC),
       Laboratório de Ensino e Pesquisa em Eletroeletrônica e Energia Renovável
@@ -128,13 +141,12 @@
             </ul>
           </nav>
         </div>
-        <button class="closeModal">X</button>
+        <button id="closeModal" class="closeModal">X</button>
       </div>
     </div>
   </section>
 
   
-
   <script src="../js/modal.js"></script>
 </body>
 </html>

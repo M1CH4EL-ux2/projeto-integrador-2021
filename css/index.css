@@ -188,6 +188,9 @@ td {
   height: 5rem;
   top: 2rem;
   right: 4rem;
+
+  background-color: none;
+  border: none;
 }
 
 .bgModal .modal div nav {
