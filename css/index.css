@@ -215,7 +215,7 @@ td {
   visibility: hidden;
 }
 
-@media only screen and (max-device-width: 400px) {
+@media only screen and (max-device-width: 480px) {
   html {
     width: 100%;
   }
